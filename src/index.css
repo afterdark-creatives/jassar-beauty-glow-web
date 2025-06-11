@@ -6,33 +6,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 350 20% 99%;
+    --foreground: 340 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 350 30% 98%;
+    --card-foreground: 340 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 350 30% 98%;
+    --popover-foreground: 340 15% 25%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 340 65% 75%;
+    --primary-foreground: 350 20% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 345 25% 95%;
+    --secondary-foreground: 340 25% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 345 20% 96%;
+    --muted-foreground: 340 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 35 45% 85%;
+    --accent-foreground: 340 25% 35%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 345 25% 92%;
+    --input: 345 25% 92%;
+    --ring: 340 65% 75%;
+
+    /* Custom beauty palette */
+    --beauty-pink: 340 65% 85%;
+    --beauty-blush: 345 55% 90%;
+    --beauty-champagne: 35 45% 85%;
+    --beauty-gold: 35 65% 70%;
+    --beauty-cream: 350 25% 97%;
+    --beauty-soft-white: 350 20% 99%;
 
     --radius: 0.5rem;
 

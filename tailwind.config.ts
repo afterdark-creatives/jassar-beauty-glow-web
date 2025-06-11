@@ -18,6 +18,11 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'script': ['Dancing Script', 'cursive'],
+				'serif': ['Playfair Display', 'serif'],
+				'sans': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -61,6 +66,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				beauty: {
+					pink: 'hsl(var(--beauty-pink))',
+					blush: 'hsl(var(--beauty-blush))',
+					champagne: 'hsl(var(--beauty-champagne))',
+					gold: 'hsl(var(--beauty-gold))',
+					cream: 'hsl(var(--beauty-cream))',
+					'soft-white': 'hsl(var(--beauty-soft-white))',
 				}
 			},
 			borderRadius: {
