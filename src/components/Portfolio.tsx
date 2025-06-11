@@ -4,39 +4,38 @@ const Portfolio = () => {
   const portfolioItems = [
     {
       id: 1,
-      category: "Bridal",
-      title: "Classic Bridal Elegance",
-      description: "Timeless bridal look with soft glam"
+      category: "Non-Bridal",
+      title: "Evening Glamour",
+      description: "Bold bronze eyeshadow with glossy lips",
+      image: "/lovable-uploads/ae8a1cfa-dced-4b7e-856c-9646cc224fed.png"
     },
     {
       id: 2,
-      category: "Bridal",
-      title: "Romantic Garden Wedding",
-      description: "Natural dewy finish with rose tones"
+      category: "Non-Bridal",
+      title: "Elegant Sophistication",
+      description: "Timeless makeup with sleek styling",
+      image: "/lovable-uploads/532504f1-99e6-4826-bd57-be9fb5c8182d.png"
     },
     {
       id: 3,
       category: "Non-Bridal",
-      title: "Evening Glamour",
-      description: "Bold and sophisticated evening look"
+      title: "Natural Glow",
+      description: "Fresh, natural enhancement",
+      image: "/lovable-uploads/f0b614aa-857b-46f3-afcb-91a549e25544.png"
     },
     {
       id: 4,
-      category: "Engagement",
-      title: "Soft Engagement Glow",
-      description: "Natural enhancement for photoshoot"
+      category: "Bridal",
+      title: "Soft Bridal Beauty",
+      description: "Romantic, natural bridal glow",
+      image: "/lovable-uploads/7f36dfd3-2320-4a28-88fc-cfeff8e73247.png"
     },
     {
       id: 5,
-      category: "Non-Bridal",
-      title: "Corporate Professional",
-      description: "Polished and professional daytime look"
-    },
-    {
-      id: 6,
       category: "Bridal",
-      title: "Vintage Inspired Bride",
-      description: "Classic vintage glamour with modern touch"
+      title: "Traditional Elegance",
+      description: "Cultural bridal makeup with traditional styling",
+      image: "/lovable-uploads/2cf0ce1b-fb1c-4000-82c1-dca41e4a924c.png"
     }
   ];
 
@@ -54,26 +53,23 @@ const Portfolio = () => {
         </div>
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-12 max-w-5xl mx-auto">
           {portfolioItems.map((item) => (
             <div 
               key={item.id} 
               className="group cursor-pointer transition-all duration-300 hover:scale-105"
             >
-              <div className="relative overflow-hidden rounded-2xl bg-beauty-blush shadow-lg">
-                <div className="aspect-[4/5] bg-gradient-to-br from-beauty-soft-white to-beauty-champagne flex items-center justify-center">
-                  <div className="text-center text-muted-foreground p-8">
-                    <div className="w-16 h-16 mx-auto mb-4 bg-beauty-pink rounded-full flex items-center justify-center">
-                      <svg className="w-8 h-8 text-primary-foreground" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
-                    </div>
-                    <p className="text-sm font-medium">{item.title}</p>
-                  </div>
+              <div className="relative overflow-hidden rounded-2xl shadow-lg">
+                <div className="aspect-[4/5] relative">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 
                 {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6 text-primary-foreground">
                     <span className="inline-block px-3 py-1 bg-beauty-gold text-xs font-medium rounded-full mb-2">
                       {item.category}
