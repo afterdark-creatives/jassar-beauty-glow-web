@@ -14,18 +14,19 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Logo */}
           <div className="mb-8">
-            <img 
-              src="/lovable-uploads/72612085-15ad-478c-b7e7-493f1b97a232.png" 
-              alt="Beauty by Jassar Logo" 
-              className="mx-auto h-32 md:h-40 object-contain"
-            />
+            <h1 className="font-script text-5xl md:text-6xl lg:text-7xl text-primary leading-tight">
+              beauty by jassar
+            </h1>
+            <p className="font-serif text-lg md:text-xl text-beauty-gold mt-2 tracking-widest uppercase">
+              Makeup Artist
+            </p>
           </div>
           
           {/* Main tagline */}
-          <h1 className="font-script text-5xl md:text-7xl lg:text-8xl text-primary mb-6 leading-tight">
+          <h2 className="font-script text-4xl md:text-5xl lg:text-6xl text-primary mb-6 leading-tight">
             Bringing out your
             <span className="block text-beauty-gold">natural beauty</span>
-          </h1>
+           </h2>
           
           <p className="font-serif text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Professional Bridal & Non-Bridal Makeup Artist specializing in enhancing your unique features for your most special moments

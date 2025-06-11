@@ -31,11 +31,9 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <img 
-              src="/lovable-uploads/72612085-15ad-478c-b7e7-493f1b97a232.png" 
-              alt="Beauty by Jassar" 
-              className="h-12 object-contain"
-            />
+            <h1 className="font-script text-2xl md:text-3xl text-primary">
+              beauty by jassar
+            </h1>
           </div>
 
           {/* Desktop Menu */}

@@ -6,11 +6,12 @@ const Footer = () => {
           {/* Logo and Tagline */}
           <div className="text-center md:text-left">
             <div className="mb-4">
-              <img 
-                src="/lovable-uploads/72612085-15ad-478c-b7e7-493f1b97a232.png" 
-                alt="Beauty by Jassar Logo" 
-                className="h-20 object-contain mx-auto md:mx-0 brightness-0 invert"
-              />
+              <h3 className="font-script text-3xl md:text-4xl text-primary-foreground">
+                beauty by jassar
+              </h3>
+              <p className="font-serif text-sm text-primary-foreground/80 mt-1 tracking-widest uppercase">
+                Makeup Artist
+              </p>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Professional makeup artist specializing in bridal and non-bridal looks. 
